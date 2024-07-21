@@ -1,0 +1,12 @@
+{
+    "name": "Moseley Extension",
+    "version": "0.0.0.1",
+    "manifest_version": 3,
+    "description": "My extension for personal use",
+    "icons": {
+        "128": "icons/motokoIcon128x128.png"
+    },
+    "action": {
+        "default_popup": "popup/popup.html"
+    }
+}
