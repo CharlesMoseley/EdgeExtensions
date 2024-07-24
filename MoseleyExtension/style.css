@@ -1,0 +1,7 @@
+body {
+	background-image: url(/images/water.jpg);
+	background-attachment: fixed;
+}
+h1 {
+	color:yellow;
+}
