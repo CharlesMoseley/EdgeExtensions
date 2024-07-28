@@ -1,7 +1,32 @@
 body {
-	background-image: url(/images/water.jpg);
+	background-image: url("images/water.jpg");
 	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 h1 {
 	color:yellow;
+}
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: purple;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
 }
