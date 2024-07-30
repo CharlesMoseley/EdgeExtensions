@@ -30,3 +30,12 @@ a:active {
   background-color: transparent;
   text-decoration: underline;
 }
+
+td {
+	width:100px;
+	text-align:center;
+	border:3px solid black;
+	border-radius:10px;
+	background-color:yellow;
+	border-style:ridge;
+}
