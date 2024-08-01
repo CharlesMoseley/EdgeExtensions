@@ -1,0 +1,12 @@
+{
+    "name": "Gallon Extension",
+    "version": "0.0.0.1",
+    "manifest_version": 3,
+    "description": "The gallon extension. It's worth a gallon!",
+    "icons": {
+        "128": "icons/gallonIcon128x128.png"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    }
+}

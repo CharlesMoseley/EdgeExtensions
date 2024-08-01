@@ -1,0 +1,13 @@
+.slider-surround {
+	width:200px;
+	height:30px;
+	border:2px;
+	background-color:red;
+	align-content:center;
+}
+
+.slider {
+	width:15px;
+	height:15px;
+	transform: translate(0px);
+}
