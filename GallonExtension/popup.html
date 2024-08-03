@@ -4,20 +4,24 @@
         <meta charset="UTF-8" />
         <title>Gallon Extension</title>
 		<link rel="stylesheet" href="css/slider.css">
-		 <script src="js/slider.js"></script>
+		
 		<link rel="icon" type="image/x-icon" href="icons/gallonIcon128x128.png">
 		
     </head>
-	<body style="background-color:rgb(255, 235, 204)">
+	<body id="body" style="background-color:rgb(255, 235, 204)">
 		<p style="font-family:'Georgia', Times, serif;"> Tab Volume </p>
 		
 		<div id="thingId" style="width:200px;height:100px;"}> yes</div>
 		<script src="js/popup.js"></script>
+		
 		<br>
-		<div class="slider-surround">
-			<div class="slider"></div>
+		
+		<div id="slider-surround" class="slider-surround">
+			<div id="slider" class="slider"></div>
 		
 		</div>
+		<div>Volume: </div><div id="VolumeAmount"></div>
+		<script src="js/slider.js"></script>
 		
 		<form>
 			<label for="vol">Volume (between 0 and 50):</label>

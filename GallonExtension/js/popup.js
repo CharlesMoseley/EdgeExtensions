@@ -9,6 +9,8 @@ thing.onmousedown = thingMouseDown;
 thing.onmouseover = highlight;
 thing.onmouseout = unhighlight;
 
+body = document.documentElement
+
 xPos = 100;
 yPos = 0;
 
@@ -18,8 +20,10 @@ function myFunction(){
 
 function thingMouseDown(e){
 	this.onmousemove = nof;
+	xPos = e.pageX
 	this.innerHTML = updatePos(xPos);
 	this.onmousemove = thingMouseMove;
+	body.onmouseup = thingMouseUp;
 	
 }
 
@@ -27,13 +31,13 @@ function thingMouseMove(e){
 	this.onmousedown = nof;
 	xPos = e.pageX
 	this.innerHTML = updatePos(xPos);
-	this.onmouseup = thingMouseUp;
+	//this.onmouseup = thingMouseUp;
 }
 
-function thingMouseUp(){
-	this.onmousemove = nof;
-	this.innerHTML = updatePos(xPos);
-	this.onmousedown = thingMouseDown;
+function thingMouseUp(e){
+	thing.onmousemove = nof;
+	thing.innerHTML = updatePos(xPos);
+	thing.onmousedown = thingMouseDown;
 }
 
 function nof(){

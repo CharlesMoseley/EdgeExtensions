@@ -7,8 +7,8 @@
 }
 
 .slider {
-	width:15px;
-	height:15px;
+	width:10px;
+	height:30px;
 	transform: translate(0px);
 	background-color:blue;
 }
