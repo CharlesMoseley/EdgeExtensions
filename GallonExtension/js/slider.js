@@ -63,3 +63,43 @@ function highlight(){
 function unhighlight(){
 	this.style.backgroundColor = "red";
 }
+/*
+async connectAsync(stream) {
+	const auCtx = new AudioContext();
+	const source = auCtx.createMediaStreamSource(stream);
+	const destNode = auCtx.createMediaStreamDestination();
+	const gainNode = this.gainNode = auCtx.createGain();
+	gainNode.gain.value = 1;
+	gainNode.connect(destNode);
+	source.connect(gainNode);
+	const outStream = destNode.stream;
+	//await this.visualizer.setStreamAsync(outStream);
+	this.audio.srcObject = outStream;
+	this.audio.play();
+	//setKnobValue(100);
+}
+
+async getStreamAsync(tabId) {
+	const currTabId = (await chrome.tabs.getCurrent())
+		?.id;
+	if (!currTabId) {
+		throw new Error("Error getting curr Tab Id");
+	}
+	return new Promise(r => {
+		chrome.tabCapture.getMediaStreamId({
+			consumerTabId: currTabId,
+			targetTabId: tabId,
+		}, (streamId) => {
+			const stream = navigator.mediaDevices.getUserMedia({
+				video: false,
+				audio: {
+					mandatory: {
+						chromeMediaSource: "tab",
+						chromeMediaSourceId: streamId,
+					}
+				},
+			});
+			r(stream);
+		});
+	});
+}*/
