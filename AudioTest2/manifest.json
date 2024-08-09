@@ -1,0 +1,12 @@
+{
+    "name": "AudioTest2",
+    "version": "0.0.0.1",
+    "manifest_version": 3,
+    "description": "FFFFFFFFFFFFFFFF",
+    "icons": {
+        "128": "icons/128icon.png"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
