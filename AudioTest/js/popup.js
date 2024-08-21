@@ -3,6 +3,7 @@ const audioContext = new AudioContext();
 audioElement = document.querySelector(".mp3audio");
 playButton = document.querySelector(".audiobutton");
 volumeControl = document.querySelector(".volume");
+vlmInd = document.querySelector(".volumeindicator")
 
 const gainNode = audioContext.createGain();
 track = audioContext.createMediaElementSource(audioElement);
@@ -36,11 +37,15 @@ playButton.addEventListener(
   false,
 );
 
-gainNode.gain.value = Math.pow(volumeControl.value,1.7);
+vlmValInit = Math.pow(volumeControl.value,1.7);
+gainNode.gain.value = vlmValInit;
+vlmInd.textContent = Math.round(vlmValInit*10000)/100;
 volumeControl.addEventListener(
   "input",
   () => {
-    gainNode.gain.value = Math.pow(volumeControl.value,1.7);
+	vlmVal = Math.pow(volumeControl.value,1.7);
+    gainNode.gain.value = vlmVal;
+	vlmInd.textContent = Math.round(vlmVal*10000)/100;
   },
   false,
 );
